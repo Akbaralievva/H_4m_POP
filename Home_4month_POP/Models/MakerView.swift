@@ -2,34 +2,54 @@
 //  MakerView.swift
 //  Home_4month_POP
 //
-//  Created by A LINA on 5/3/24.
+//  Created by A LINA on 3/3/24.
 //
 
 import UIKit
 
-class MakerView {
+final class MakerView {
     
     static let shared = MakerView()
     
-    func makeBTN(title: String = "",
-                 for state: UIControl.State = .normal,
-                 colorBT: UIColor = .blue,
-                 backgroundColorBT: UIColor? = nil,
-                 layerCornerBT: CGFloat = 28) -> UIButton {
-        let bt = UIButton(type: .system)
-        bt.setTitle(title, for: state)
-        bt.tintColor = colorBT
-        bt.backgroundColor = backgroundColorBT
-        bt.layer.cornerRadius = layerCornerBT
-        bt.translatesAutoresizingMaskIntoConstraints = false
-        return bt
+    
+    func makeUIView(layerCorneradius: CGFloat? = nil,
+                    backgroundColor: UIColor = .white) -> UIView {
+        let view = UIView()
+        view.backgroundColor = backgroundColor
+        view.translatesAutoresizingMaskIntoConstraints = false
+        if let cornerRadius = layerCorneradius {
+            view.layer.cornerRadius = cornerRadius
+        }
+        return view
     }
     
-   
+    func makeImage(image: String? = nil) -> UIImageView {
+        let img = UIImageView()
+        img.image = UIImage(named: image!)
+        img.translatesAutoresizingMaskIntoConstraints = false
+        return img
+    }
+    
+    func makeBTN(title: String = "",
+                 ofSize: UIFont.Weight = .medium,
+                 for state: UIControl.State = .normal,
+                 colorBtn: UIColor = .white,
+                 backgroundColorBT: UIColor? = nil,
+                 layerCornerBT: CGFloat = 28) -> UIButton {
+        let button = UIButton(type: .system)
+        button.setTitle(title, for: state)
+        button.tintColor = colorBtn
+        button.backgroundColor = backgroundColorBT
+        button.layer.cornerRadius = layerCornerBT
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }
+    
+    
     
     func makeLbl(text: String = "",
                  textColor: UIColor = .black,
-                 textSize: CGFloat = 14, ofSize: UIFont.Weight = .light,
+                 textSize: CGFloat = 14, ofSize: UIFont.Weight = .medium,
                  numberOfLines: Int = 0) -> UILabel {
         let label = UILabel()
         label.text = text
@@ -40,32 +60,29 @@ class MakerView {
         return label
     }
     
-   
-    
-    func makeTF(placeholder: String = "Напишите что то",
-                keyboardType: UIKeyboardType = .default,
+    func makeTF(placeholder: String = "Enter Something",
+                keyboardType: UIKeyboardType = .asciiCapableNumberPad,
                 leftViewMode: UITextField.ViewMode = .always,
                 cornerRadius: CGFloat = 16,
                 borderColor: CGColor = UIColor.black.cgColor,
                 borderWidth: CGFloat = 1,
                 backgroundColor: UIColor = .white,
                 alignment: NSTextAlignment? = nil) -> UITextField {
-        let tf = UITextField()
-        tf.placeholder = placeholder
-        tf.keyboardType = keyboardType
-        tf.backgroundColor = backgroundColor
+        let textField = UITextField()
+        textField.placeholder = placeholder
+        textField.keyboardType = keyboardType
+        textField.backgroundColor = backgroundColor
         if let alignment = alignment {
-            tf.textAlignment = alignment
+            textField.textAlignment = alignment
         }
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 8, height: 5))
-        tf.leftView = view
-        tf.leftViewMode = leftViewMode
-        tf.layer.cornerRadius = cornerRadius
-        tf.layer.borderColor = borderColor
-        tf.layer.borderWidth = borderWidth
-        tf.translatesAutoresizingMaskIntoConstraints = false
-        return tf
-    }
+        textField.leftView = view
+        textField.leftViewMode = leftViewMode
+        textField.layer.cornerRadius = cornerRadius
+        textField.layer.borderColor = borderColor
+        textField.layer.borderWidth = borderWidth
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        return textField    }
     
 }
 

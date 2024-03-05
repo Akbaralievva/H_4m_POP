@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		CFD111602B97727000742BC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1115F2B97727000742BC3 /* AppDelegate.swift */; };
 		CFD111622B97727000742BC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD111612B97727000742BC3 /* SceneDelegate.swift */; };
-		CFD111642B97727000742BC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD111632B97727000742BC3 /* ViewController.swift */; };
-		CFD111672B97727100742BC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD111652B97727100742BC3 /* Main.storyboard */; };
+		CFD111642B97727000742BC3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD111632B97727000742BC3 /* MainViewController.swift */; };
 		CFD111692B97727300742BC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD111682B97727300742BC3 /* Assets.xcassets */; };
 		CFD1116C2B97727300742BC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD1116A2B97727300742BC3 /* LaunchScreen.storyboard */; };
+		CFD111762B97738600742BC3 /* MakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD111752B97738600742BC3 /* MakerView.swift */; };
+		CFD111792B97794C00742BC3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD111782B97794C00742BC3 /* SecondViewController.swift */; };
+		CFD1117B2B97796700742BC3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1117A2B97796700742BC3 /* FirstViewController.swift */; };
+		CFD1117D2B97797700742BC3 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1117C2B97797700742BC3 /* ThirdViewController.swift */; };
+		CFD1117F2B977AFB00742BC3 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1117E2B977AFB00742BC3 /* SuccessViewController.swift */; };
+		CFD111812B977D1E00742BC3 /* CardNumberChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD111802B977D1E00742BC3 /* CardNumberChecker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CFD1115C2B97727000742BC3 /* Home_4month_POP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Home_4month_POP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD1115F2B97727000742BC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFD111612B97727000742BC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CFD111632B97727000742BC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CFD111662B97727100742BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFD111632B97727000742BC3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CFD111682B97727300742BC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFD1116B2B97727300742BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFD1116D2B97727300742BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD111752B97738600742BC3 /* MakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerView.swift; sourceTree = "<group>"; };
+		CFD111782B97794C00742BC3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CFD1117A2B97796700742BC3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		CFD1117C2B97797700742BC3 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		CFD1117E2B977AFB00742BC3 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		CFD111802B977D1E00742BC3 /* CardNumberChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNumberChecker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		CFD1115E2B97727000742BC3 /* Home_4month_POP */ = {
 			isa = PBXGroup;
 			children = (
-				CFD1115F2B97727000742BC3 /* AppDelegate.swift */,
-				CFD111612B97727000742BC3 /* SceneDelegate.swift */,
-				CFD111632B97727000742BC3 /* ViewController.swift */,
-				CFD111652B97727100742BC3 /* Main.storyboard */,
-				CFD111682B97727300742BC3 /* Assets.xcassets */,
-				CFD1116A2B97727300742BC3 /* LaunchScreen.storyboard */,
+				CFD111732B97729900742BC3 /* AppDelegate */,
+				CFD111742B9772AA00742BC3 /* ViewControllers */,
+				CFD111772B9778DA00742BC3 /* Models */,
+				CFD111852B97C23500742BC3 /* Resources */,
 				CFD1116D2B97727300742BC3 /* Info.plist */,
 			);
 			path = Home_4month_POP;
+			sourceTree = "<group>";
+		};
+		CFD111732B97729900742BC3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CFD1115F2B97727000742BC3 /* AppDelegate.swift */,
+				CFD111612B97727000742BC3 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CFD111742B9772AA00742BC3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFD111842B97C1A000742BC3 /* MainViewController */,
+				CFD1117A2B97796700742BC3 /* FirstViewController.swift */,
+				CFD111782B97794C00742BC3 /* SecondViewController.swift */,
+				CFD1117C2B97797700742BC3 /* ThirdViewController.swift */,
+				CFD1117E2B977AFB00742BC3 /* SuccessViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CFD111772B9778DA00742BC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CFD111752B97738600742BC3 /* MakerView.swift */,
+				CFD111802B977D1E00742BC3 /* CardNumberChecker.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CFD111842B97C1A000742BC3 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFD111632B97727000742BC3 /* MainViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		CFD111852B97C23500742BC3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CFD111682B97727300742BC3 /* Assets.xcassets */,
+				CFD1116A2B97727300742BC3 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +182,6 @@
 			files = (
 				CFD1116C2B97727300742BC3 /* LaunchScreen.storyboard in Resources */,
 				CFD111692B97727300742BC3 /* Assets.xcassets in Resources */,
-				CFD111672B97727100742BC3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFD111642B97727000742BC3 /* ViewController.swift in Sources */,
+				CFD111642B97727000742BC3 /* MainViewController.swift in Sources */,
+				CFD111762B97738600742BC3 /* MakerView.swift in Sources */,
+				CFD111812B977D1E00742BC3 /* CardNumberChecker.swift in Sources */,
 				CFD111602B97727000742BC3 /* AppDelegate.swift in Sources */,
+				CFD1117D2B97797700742BC3 /* ThirdViewController.swift in Sources */,
+				CFD1117B2B97796700742BC3 /* FirstViewController.swift in Sources */,
+				CFD111792B97794C00742BC3 /* SecondViewController.swift in Sources */,
+				CFD1117F2B977AFB00742BC3 /* SuccessViewController.swift in Sources */,
 				CFD111622B97727000742BC3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +207,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CFD111652B97727100742BC3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CFD111662B97727100742BC3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CFD1116A2B97727300742BC3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,9 +348,9 @@
 				INFOPLIST_FILE = Home_4month_POP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,9 +375,9 @@
 				INFOPLIST_FILE = Home_4month_POP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
